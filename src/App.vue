@@ -1,6 +1,16 @@
 <template>
   <v-app>
-    <v-card width="400" class="mx-auto mt-5">
+    <v-app-bar app color="primary" dark>
+      <v-toolbar-title>Todd's Dashboard</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn>Home</v-btn>
+      <v-btn>Login</v-btn>
+    </v-app-bar>
+<!--
+    Login module
+-->
+    <v-content>
+      <v-card width="400" class="mx-auto mt-5">
       <v-card-title>
         <h1 class="display-1">Login</h1>
       </v-card-title>
@@ -25,6 +35,18 @@
         <v-btn color="info">Login</v-btn>
       </v-card-actions>
     </v-card>
+    </v-content>
+    <v-footer
+        absolute
+        class="font-weight-medium"
+    >
+      <v-col
+          class="text-center"
+          cols="12"
+      >
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 

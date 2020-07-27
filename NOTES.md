@@ -19,3 +19,11 @@ That worked !
 Prepend attributes with :type, for data or vm keyed items;  
 `:type="showPassword ? 'text' : 'password'"`
 
+#### Lesson 2 - Components (part 1)
+
+Add navbar, `v-app-bar`, 
+
+[Docs](https://vuetifyjs.com/en/components/app-bars/) show live example, props and slots.
+
+[Application component](https://vuetifyjs.com/en/components/application/) and v-content component to adjust overflows
+ 
