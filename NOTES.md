@@ -26,4 +26,15 @@ Add navbar, `v-app-bar`,
 [Docs](https://vuetifyjs.com/en/components/app-bars/) show live example, props and slots.
 
 [Application component](https://vuetifyjs.com/en/components/application/) and v-content component to adjust overflows
- 
+
+Add navbar, footer, "text rounded" to nav buttons to match footer.
+
+#### Lesson 3 - Components (part 2)
+Multi-page routing, more complex components          
+[Video](https://www.vuemastery.com/courses/beautify-with-vuetify/components-part-2)  
+[GH Lesson 3](https://github.com/Code-Pop/beautify-with-vuetify/tree/Lesson-3-BEGIN)   
+
+
+
+
+
