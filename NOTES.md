@@ -85,8 +85,8 @@ on `v-col`
 
 Part 2 Design reqmt ( desktop devices )
  * EmployeesTable + EventTimeline should be same row
- * EmployeesTable is 2/3 of row width
- * EventTimeline is 1/3 of row width
+ * EmployeesTable is 2/3 of row width  ( hint: use `cols="8"`)
+ * EventTimeline is 1/3 of row width 
  
  
 
