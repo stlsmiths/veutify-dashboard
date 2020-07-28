@@ -66,28 +66,29 @@ See y implementation at [Line](https://github.com/stlsmiths/veutify-dashboard/bl
 
 I also added a Vue filter to format as currency.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Lesson 4 - Layouts : Grid System 
 
-Wrap content in `v-content`, then `v-row` and inner `v-col`  
+Wrap content in `v-container`, then `v-row` and inner `v-col`  
 Same grid system as Bootstrap, 12 units wide
 add attribute `cols="8"` for example
+
+Can use `v-spacer` to occupy empty column space
+
+Part 1 Design Reqmts ( desktop devices )
+ * all SalesGraphs in single row
+ * each SalesGraph is 1/3 of row width
+ * All StatisticCard in a single row
+ * each StatisticCard is 1/4 of row width 
+
+Easy peasy - just wrap SalesGraph and StatisticCard in `v-row` and `v-col` and put v-for and :key 
+on `v-col`
+
+Part 2 Design reqmt ( desktop devices )
+ * EmployeesTable + EventTimeline should be same row
+ * EmployeesTable is 2/3 of row width
+ * EventTimeline is 1/3 of row width
+ 
+ 
 
 
 #### Lesson 5 - Layouts : Responsive Design
