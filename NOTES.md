@@ -92,7 +92,7 @@ Part 2 Design reqmt ( desktop devices )
  
 #### Lesson 5 - Layouts : Responsive Design
 
-[Video] https://www.vuemastery.com/courses/beautify-with-vuetify/layouts-responsive-design
+[Video](https://www.vuemastery.com/courses/beautify-with-vuetify/layouts-responsive-design)
 
 Responseive design ... i.e. think Mobile!
 
