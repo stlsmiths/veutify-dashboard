@@ -191,7 +191,15 @@ Themes ... [Vue Theme docs](https://vuetifyjs.com/en/customization/theme/)
 
 Dark theme toggling ... anchor color defaults.
 
-SASS usage, create /sass folder.
+@5:47 Sass usage, create /sass folder.
+ * update public/index.html ... replace font
+ * define fonts in scss/variables.scss file  ( see [Docs](https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/src/styles/settings/_variables.scss) )
+ * restart server ... changes require restart
+
+[Final author GH](https://github.com/Code-Pop/beautify-with-vuetify/tree/Lesson-9-END) 
+ 
+
+
 
 
 
