@@ -56,7 +56,17 @@ Extra Credit:
  * enable multi-column sorting
  * change snackbar to show employee name  / title on click
  
-To add a "formatter" to a column, you use a v-slot ... 
+To add a "formatter" to a column, you use a v-slot ...like
+``` 
+<template v-slot:item.salary="{item}>
+  $ {{ item.salary }}
+</template>
+```        
+See y implementation at [Line](https://github.com/stlsmiths/veutify-dashboard/blob/master/src/views/Dashboard.vue#L13)
+
+I also added a Vue filter to format as currency.
+
+
 
 
 
