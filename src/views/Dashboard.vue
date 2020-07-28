@@ -2,12 +2,18 @@
   <div>
     <h1>Dashboard</h1>
     <v-data-table
-      :headers="headers"
-      :items="desserts"
+        multi-sort
+        dense 
+      :headers="empHeaders"
+      :items="employees"
       :items-per-page="5"
       class="elevation-1"
       @click:row="selectRow"
-    ></v-data-table>
+    >
+      <template
+        v-slot:item.salary="{item}"
+      >$ {{ item.salary | currency }}</template>
+    </v-data-table>
     <v-snackbar
       v-model="snackbar"
     >
@@ -27,11 +33,36 @@
 </template>
 
 <script>
+import employees from '@/data/employees.json'
   export default {
     data () {
       return {
         snackbar: false,
         snackbarText: 'Hello, I\'m a snackbar',
+        employees: employees,
+        empHeaders: [
+          {
+            text: 'Emp ID',
+            value: 'id',
+            sortable: true
+          },
+          {
+            text: 'Name',
+            value: 'name',
+            sortable: true
+          },
+          {
+            text: 'Title',
+            value: 'title',
+            sortable: true
+          },
+          {
+            text: 'Salary $',
+            value: 'salary',
+            sortable: true,
+            align: 'right'
+          }
+        ],
         headers: [
           {
             text: 'Dessert (100g serving)',
@@ -132,7 +163,7 @@
     methods: {
       selectRow(e) {
         // console.log('click row', e)
-        this.snackbarText = e.name
+        this.snackbarText = `${e.name} / ${e.title}`
         this.snackbar = true
       }
     },

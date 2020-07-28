@@ -5,6 +5,12 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.filter( 'currency', (value,ndec = 0) => {
+  return new Intl.NumberFormat('en-US',{
+    maximumFractionDigits: ndec,
+    minimumFractionDigits: ndec }).format(value)
+})
+
 new Vue({
   vuetify,
   router,

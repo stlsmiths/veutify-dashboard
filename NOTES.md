@@ -52,10 +52,11 @@ add [v-snackbar component](https://vuetifyjs.com/en/components/snackbars/#snackb
 Datatable `@click:row` passes row data as event.
 
 Extra Credit:
- * use data/employee db as new data
+ * use data/employee db as new data ( downoad from repo )
  * enable multi-column sorting
  * change snackbar to show employee name  / title on click
  
+To add a "formatter" to a column, you use a v-slot ... 
 
 
 
