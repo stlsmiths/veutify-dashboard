@@ -1,7 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-toolbar-title>Todd's Dashboard</v-toolbar-title>
+    <v-app-bar app color="primary" dense>
+      <v-toolbar-title
+        @click="goHome"
+      >Todd's Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         v-for="link in links"
@@ -12,6 +14,7 @@
       >
         {{ link.label }}
       </v-btn>
+      <v-btn text rounded dark @click="toggleTheme">Toggle Theme</v-btn>
     </v-app-bar>
 
     <v-main>
@@ -61,6 +64,15 @@ export default {
         { label: 'Signup', url:'/signup'},
         { label: 'Login', url: '/login'}
       ]
+    }
+  },
+  methods: {
+    toggleTheme() {
+      // this.$vuetify.theme.themes.dark.anchor = '#41B883'
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+    },
+    goHome() {
+      this.$router.push({name:'Home'})
     }
   },
 };

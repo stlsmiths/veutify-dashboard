@@ -140,17 +140,59 @@ Build SignUp page and use form elements.
  * how to show picker on focus or modal  ( see [doc examples](https://vuetifyjs.com/en/components/date-pickers/#examples)  )
  * bind to a v-model
 
-Agree to T&C's ... checkbox 
-
- 
-
-
+Agree to T&C's ... checkbox and add Submit button
 
 #### Lesson 7 - Forms : Validation
 
+Form validation ... "all input components have a 'rules' prop that includes an array to validate results"
+
+Validation: 
+ * define the vm as data.itemname
+ * define rules as array of arrow functions in data
+ * rules automatically render below control after focus if not met
+ 
+@5:32 ... good email rules, pretty comprehensive
+
+[Reset forms](https://vuetifyjs.com/en/components/forms/#validation-with-submit-clear) .. also reset validation
+
+To reference the form, use `this.$refs`.
+
+Reference the form as `this.$refs.formName.reset()`
+
+Validity of form, the v-form has a props of `value` and `validate`
+
+Can run `this.$refs.formName.validate()` to run form validation at any moment.
+
+Q: Not sure if basic Vuetify includes form "dirty" or "pristine" state ?
+ * Look into [vuelidate](https://vuelidate.js.org/#getting-started) which seems to have $dirty props for whole form
+ * OR [VeeValidate](https://logaretm.github.io/vee-validate/)  
+
+[Final GH this lesson](https://github.com/Code-Pop/beautify-with-vuetify/tree/Lesson-7-FINISH)
+
 #### Lesson 8 - Directives
 
+[Video](https://www.vuemastery.com/courses/beautify-with-vuetify/directives)
+
+Standard directives  ...[resize](https://vuetifyjs.com/en/directives/resizing/)
+
+Write a custom directive.
+
+Content "below the fold .... ", 'v-intersect', "skeleton loader"
+
+[intersection observer docs](https://vuetifyjs.com/en/directives/intersect/#intersection-observer)
+
+@6:16 mutation observer directives, v-scroll  
+
+`v-touch` swipes and similar
+
 #### Lesson 9 - Themes
+
+Themes ... [Vue Theme docs](https://vuetifyjs.com/en/customization/theme/)
+
+Dark theme toggling ... anchor color defaults.
+
+SASS usage, create /sass folder.
+
 
 
 
