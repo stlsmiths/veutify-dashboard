@@ -14,7 +14,9 @@ $ npm install @mdi/font -D
 add to veutify.js
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 ```
-That worked !
+That worked !  
+_[Note: after the fact, I filed an issue and the author checked it and couldn't replicate.  I
+subseqeuntly re-built a new project and icons worked fine, so clearly my error somewhere]_
 
 Prepend attributes with :type, for data or vm keyed items;  
 `:type="showPassword ? 'text' : 'password'"`
@@ -88,10 +90,44 @@ Part 2 Design reqmt ( desktop devices )
  * EmployeesTable is 2/3 of row width  ( hint: use `cols="8"`)
  * EventTimeline is 1/3 of row width 
  
+#### Lesson 5 - Layouts : Responsive Design
+
+[Video] https://www.vuemastery.com/courses/beautify-with-vuetify/layouts-responsive-design
+
+Responseive design ... i.e. think Mobile!
+
+Veutify calls them "breakpoints", (xs,sm,md,lg,xl)
+
+Apply breakpoints to `v-col`.
+
+Lesson design reqmts:
+ * SalesGraph width 
+   * mobile:  100% wide
+   * tablet >:  1/3 wide
+ * Desktop devices:  Snackbar position on left
+
+Adding `cols="12" md="4"` fixes the SalesGraph issue.
+
+Snackbar positioning:
+
+@5:32 he shows all the JS code required to manually determine the
+device size and position left or center.
+
+Can use `$vuetify.breakpoint.lgAndUp` as boolean to toggle `:left` flag 
+on Snackbar ... really sweet !!👍🏼
+
+*Extra Credit:*
+Design Reqmts:
+ * Mobile:  all components 100%
+ * Tables >:
+    * StatisticCard 1/2
+    * EmployeesTable 2/3
+    * EventTimeline 1/3
+ * desktop >
+    * StatisticCard 1/4
+    
  
 
-
-#### Lesson 5 - Layouts : Responsive Design
 
 #### Lesson 6 - Forms : Fundamentals
 
