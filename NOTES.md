@@ -128,8 +128,23 @@ Design Reqmts:
 
 Basically - anywhere you define a md="6" or lg="3" you must have a cols="12" also
 
-
 #### Lesson 6 - Forms : Fundamentals
+
+Build SignUp page and use form elements.
+
+[Autocomplete](https://vuetifyjs.com/en/components/autocompletes/#autocompletes)
+
+[file input](https://vuetifyjs.com/en/components/file-inputs/#file-inputs)  pretty nice
+
+[date picker](https://vuetifyjs.com/en/components/date-pickers/)
+ * how to show picker on focus or modal  ( see [doc examples](https://vuetifyjs.com/en/components/date-pickers/#examples)  )
+ * bind to a v-model
+
+Agree to T&C's ... checkbox 
+
+ 
+
+
 
 #### Lesson 7 - Forms : Validation
 

@@ -58,6 +58,7 @@ export default {
         { label: 'Home', url: '/'},
         { label: 'Dashboard', url: '/dashboard'},
         { label: 'About', url: '/about'},
+        { label: 'Signup', url:'/signup'},
         { label: 'Login', url: '/login'}
       ]
     }
