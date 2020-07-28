@@ -34,6 +34,8 @@ Multi-page routing, more complex components
 [Video](https://www.vuemastery.com/courses/beautify-with-vuetify/components-part-2)  
 [GH Lesson 3](https://github.com/Code-Pop/beautify-with-vuetify/tree/Lesson-3-BEGIN)   
 
+vue add router ... kills our App.vue
+
 
 
 
