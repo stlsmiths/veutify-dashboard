@@ -1,5 +1,5 @@
 <template>
-    <v-content>
+    <v-main>
       <v-card width="400" class="mx-auto mt-5">
       <v-card-title>
         <h1 class="display-1">Login</h1>
@@ -25,7 +25,7 @@
         <v-btn color="info">Login</v-btn>
       </v-card-actions>
     </v-card>
-    </v-content>
+    </v-main>
 </template>
 
 <script>
