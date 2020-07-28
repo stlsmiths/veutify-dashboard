@@ -34,8 +34,60 @@ Multi-page routing, more complex components
 [Video](https://www.vuemastery.com/courses/beautify-with-vuetify/components-part-2)  
 [GH Lesson 3](https://github.com/Code-Pop/beautify-with-vuetify/tree/Lesson-3-BEGIN)   
 
-vue add router ... kills our App.vue
+vue add router ... kills our App.vue!, have to revert to git commit
 
+add `Login`component, move App.vue stuff there (showPassword).  Add to router
+as lazy loaded route.  Add `<router-view>` to App.vue.
+Fix v-btn to use `to="""` for router linking  
+Update navbar / footer to use `links` array for consistency.
+
+Add `Dashboard` as main component (using Datatable, get user data from the docs).
+
+[Vuetify Datatables](https://vuetifyjs.com/en/components/data-tables/)  
+Attributes are `:headers and :items`.
+
+@10:49 Row click handling  
+add [v-snackbar component](https://vuetifyjs.com/en/components/snackbars/#snackbars)  
+
+Datatable `@click:row` passes row data as event.
+
+Extra Credit:
+ * use data/employee db as new data
+ * enable multi-column sorting
+ * change snackbar to show employee name  / title on click
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Lesson 4 - Layouts : Grid System 
+
+Wrap content in `v-content`, then `v-row` and inner `v-col`  
+Same grid system as Bootstrap, 12 units wide
+add attribute `cols="8"` for example
+
+
+#### Lesson 5 - Layouts : Responsive Design
+
+#### Lesson 6 - Forms : Fundamentals
+
+#### Lesson 7 - Forms : Validation
+
+#### Lesson 8 - Directives
+
+#### Lesson 9 - Themes
 
 
 
