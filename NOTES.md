@@ -125,8 +125,8 @@ Design Reqmts:
     * EventTimeline 1/3
  * desktop >
     * StatisticCard 1/4
-    
- 
+
+Basically - anywhere you define a md="6" or lg="3" you must have a cols="12" also
 
 
 #### Lesson 6 - Forms : Fundamentals
